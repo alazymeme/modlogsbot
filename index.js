@@ -404,7 +404,7 @@ function initPubSub() {
 							}, function (error, response, body) {
 								if (!error && response.statusCode === 200) {
 									if (discordchannel) {
-										discordchannel.send(`${settings.discord.messagePrefix || ""} ${escapeDiscordString(action.created_by || "automod")} used command \`/${action.moderation_action} ${body.name}\` at \`${timestamp}\` \n\See <https://twitch.tv/popout/${listener.twitch.channel_name}/viewercard/${body.name}>`);
+										discordchannel.send(`${settings.discord.messagePrefix || ""} ${escapeDiscordString(action.created_by || "automod")} used command \`/${action.moderation_action} ${body.name}\` at \`${timestamp}\` \n\See <https://logs.ivr.fi/?channel=${listener.twitch.channel_name}&username=${body.name}>`);
 									} else {
 										console.error(`Could not find discord channel for listener ${JSON.stringify(listener)}`);
 									}
@@ -413,7 +413,7 @@ function initPubSub() {
 							// this case overrides default behavior, so we break out
 							return;
 						} else {
-							text += `\nSee <https://twitch.tv/popout/${listener.twitch.channel_name}/viewercard/${action.args[0]}>`;
+							text += `\nSee <https://logs.ivf.fi/?channel=${listener.twitch.channel_name}&username=${action.args[0]}>`;
 						}
 					}
 					if (discordchannel) {
