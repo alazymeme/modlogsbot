@@ -413,7 +413,7 @@ function initPubSub() {
 							// this case overrides default behavior, so we break out
 							return;
 						} else {
-							text += `\nSee <https://logs.ivf.fi/?channel=${listener.twitch.channel_name}&username=${action.args[0]}>`;
+							text += `\nSee <https://logs.ivr.fi/?channel=${listener.twitch.channel_name}&username=${action.args[0]}>`;
 						}
 					}
 					if (discordchannel) {
