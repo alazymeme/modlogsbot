@@ -129,7 +129,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"discord.js@npm:^12.5.1":
+"discord.js@npm:^12.5.3":
   version: 12.5.3
   resolution: "discord.js@npm:12.5.3"
   dependencies:
@@ -326,9 +326,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "modlogbot@workspace:."
   dependencies:
-    discord.js: ^12.5.1
+    discord.js: ^12.5.3
     request: ^2.88.2
-    ws: ^7.4.3
+    ws: ^7.5.0
   languageName: unknown
   linkType: soft
 
@@ -527,7 +527,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ws@npm:^7.4.3, ws@npm:^7.4.4":
+"ws@npm:^7.4.4":
   version: 7.4.5
   resolution: "ws@npm:7.4.5"
   peerDependencies:
@@ -539,5 +539,20 @@ __metadata:
     utf-8-validate:
       optional: true
   checksum: 20731aa1075336b94677f6741b674469c3c7fce9b70115bb535827c7c108a9d714f0b38ce39289b63c652870f9801afaf096f8aab32da96be62d919e80e4ed32
+  languageName: node
+  linkType: hard
+
+"ws@npm:^7.5.0":
+  version: 7.5.0
+  resolution: "ws@npm:7.5.0"
+  peerDependencies:
+    bufferutil: ^4.0.1
+    utf-8-validate: ^5.0.2
+  peerDependenciesMeta:
+    bufferutil:
+      optional: true
+    utf-8-validate:
+      optional: true
+  checksum: f9ac36310e795995f13ac7abff9c3b104b2460864de7f0b6233d285f62c6929529e24f386ff87740c3646f818fefa014be587371aa9a5a6fffae2cd9d1e9e008
   languageName: node
   linkType: hard
